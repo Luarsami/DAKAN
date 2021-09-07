@@ -1,11 +1,11 @@
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -49,3 +49,16 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+}
