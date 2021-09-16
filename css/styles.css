@@ -150,12 +150,12 @@ sup {
 }
 
 a {
-  color: #64a19d;
+  color: #fff;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #467370;
+  color: #ecebe6;
   text-decoration: underline;
 }
 
@@ -2464,6 +2464,36 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-custom{
+  color: #fff;
+  background-color: #b48d64;
+  border-color: #b48d64;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #b19d85;
+  border-color: #c1b7ab;
+}
+.btn-custom:focus, .btn-custom.focus {
+  color: #fff;
+  background-color: #b19d85;
+  border-color: #c1b7ab;
+  box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
+}
+.btn-custom.disabled, .btn-custom:disabled {
+  color: #fff;
+  background-color: #b48d64;
+  border-color: #b48d64;
+}
+.btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active, .show > .btn-custom.dropdown-toggle {
+  color: #fff;
+  background-color: #b19d85;
+  border-color: #c1b7ab;
+}
+.btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus, .show > .btn-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(#b19d85);
+}
+
 .btn-primary {
   color: #fff;
   background-color: #64a19d;
@@ -4397,7 +4427,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #b48d64;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -10139,7 +10169,7 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #545b62;
+    background-color: #b19d85;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #ffffff;
@@ -10150,15 +10180,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #c1b7ab;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #c1b7ab;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #ecebe6;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #ecebe6;
   }
 }
 
@@ -10223,8 +10253,8 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -10257,13 +10287,23 @@ body {
   margin-bottom: 5rem;
 }
 .gallery-section {
-  padding-top: 10rem;
+  padding-top: 2.5rem;
   padding-bottom: 5rem;
   background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+.gallery-section h1{
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 /* The grid: Four equal columns that floats next to each other 
@@ -10363,7 +10403,7 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #fff;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
@@ -10372,7 +10412,7 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #fff;
   border-width: 0.25rem;
   width: 3rem;
 }
