@@ -10140,13 +10140,13 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #545b62;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000000;
+    color: #ffffff;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #000000;
+    color: #ffffff;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
@@ -10224,6 +10224,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
+  padding-bottom: 10rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -10232,6 +10233,12 @@ body {
 
 .gallery-section {
   padding: 10rem 0;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/F_H2.png"); */
+  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 /* The grid: Four equal columns that floats next to each other 
