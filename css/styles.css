@@ -10340,7 +10340,7 @@ body {
 #imgtext {
   position: absolute;
   bottom: 15px;
-  left: 15px;
+  left: 50%;
   color: white;
   font-size: 20px;
 }
@@ -10348,7 +10348,7 @@ body {
 /* Closable button inside the image 
 .gallery-section .closebtn {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 15px;
   color: white;
   font-size: 35px;
