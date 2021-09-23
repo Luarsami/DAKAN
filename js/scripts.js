@@ -9,8 +9,7 @@
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
-            target = target.length
-                ? target
+            target = target.length? target
                 : $("[name=" + this.hash.slice(1) + "]");
             if (target.length) {
                 $("html, body").animate(
